@@ -7,5 +7,10 @@ describe("LeapYear", function() {
         expect(year.isLeap()).toEqual(false);
     });
 
+    it("should return false . A leap year is > 1581", function() {
+        var year = new Year(1580);
+        expect(year.isLeap()).toEqual(false);
+    });
+
 
 });
