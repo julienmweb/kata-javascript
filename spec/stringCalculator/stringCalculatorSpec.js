@@ -7,7 +7,11 @@ describe("StringCalculator", function() {
     });
 
     it("should returns the argument if the argument is a number alone", function() {
-        expect(Calc.add('1') ).toEqual(1);
+        expect(Calc.add('1')).toEqual(1);
+    })
+
+    it("should returns the sum of the arguments", function() {
+        expect(Calc.add('1,2,3.1')).toEqual(6.1);
     })
 
 });
